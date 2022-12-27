@@ -12,7 +12,6 @@ import interactionCreate from './src/events/interactionCreate.js';
 // commands
 import chat from './src/commands/chat.js';
 import server from './src/commands/server.js';
-import help from './src/commands/help.js';
 
 dotenv.config();
 consoleStamp(console, { format: ':date(yyyy/mm/dd HH:MM:ss.l)' });
@@ -31,7 +30,7 @@ client.commands = new Collection();
 
 
 client.config = {
-    prefix: process.env.PREFIX || '?',
+    prefix: process.env.PREFIX || '',
     playing: process.env.PLAYING || `${process.env.PREFIX}help`
 };
 
