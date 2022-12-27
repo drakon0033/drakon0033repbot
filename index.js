@@ -57,7 +57,6 @@ const loadCommands = () => {
         try {
             client.commands.set('chat', chat);
             client.commands.set('server', server);
-            client.commands.set('help', help);
         } catch (error) {
             reject(error);
         }
